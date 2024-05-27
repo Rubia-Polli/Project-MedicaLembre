@@ -11,13 +11,13 @@ body {
   font-family: "Karla", sans-serif;
   font-weight: 700;
   font-style: normal;
-  background-color: ced4da;
+  background-color: #ced4da;
 }
 
 .container {
-    max-width: 1160px;
+    max-width: 1090px;
     margin: auto;
-    padding: 0 16px;
+    padding: 0 0px;
 }
 
 ul {
@@ -26,7 +26,7 @@ ul {
 }
 
 header {
-    background-color: 0A9396;
+    background-color: #0A9396;
     box-shadow: 0 2px 6px 0 rgba(103, 116, 104, 0.15);
     height: 80px;
     position: fixed;
@@ -51,7 +51,7 @@ header .logo {
 }
 
 header .icon {
-    color: d90429;
+    color: #d90429;
     display: inline-block;
     vertical-align: middle;
 }
@@ -73,19 +73,20 @@ header nav ul li a {
     flex-direction: column;
 }
 
-section.programados {
+section.programs {
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    height: 15%;
+    height: 14%;
     z-index: 0;
     margin-top: 78px;
-    padding-left: 10px;;
+    padding-left: 10px 0;
     z-index: 0;
 }
 
-.programados .program-content .container {
+.programs .program-content .container {
     display: contents;
     flex-direction: column;
     align-items: center;
@@ -93,28 +94,31 @@ section.programados {
     width: 100%;
 }
 
-.programados  h1 {
-    max-width: 495px;
+.programs  h1 {
+    max-width: 1164;
     color: #080808;
     font-family: Karla;
     font-size: 26px;
     letter-spacing: 1.25px;
     line-height: 56px;
-    margin-bottom: 16px;
-    margin-top: 16px;
+    margin: 20px 30px 0 46px;
     font-weight:500;
     padding-left: 24px;
+    background-color: #c2c0c0;
+    border-radius: 20px;
 }
 
+
 section.cards {
-    padding: 0 8px;
+    padding: 50px 50px 0;
 }
 
 section.cards .cards-slider {
     display: flex;
     justify-content: space-between; 
-    flex-wrap: wrap; 
-    padding: 20px 10px 5px 10px;
+    flex-wrap: nowrap;
+    right: 0;
+    left: 0;
 }
 
 section.cards .cards-slider .container .product-info {
@@ -154,11 +158,189 @@ section.cards .cards-slider .container .product-info-L {
     margin-bottom: 16px;
 }
 
-footer  {
+section.area-cadastro {
+    margin-top: 80px; 
+    padding: 16px; 
+  }
+
+ section.area-cadastro .container {
+    z-index: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 100%;
+ }   
+
+ section.area-cadastro .container .menu-cadastro {
     position: absolute;
+    top: 20px;
+    left: 0px;
+    right: 0;
+    margin: 18px 30px 0 0px;
     bottom: 0;
     width: 100%;
-    text-align: center;
-    }
-    
+    height: 14%;
+    z-index: 0;
+    margin-top: 78px;
+    padding-left: 0px 0;
+    z-index: 0;
+    max-width: 100%;
+ }
 
+ section.area-cadastro .container .menu-cadastro h1 {
+    max-width: 1164;
+    color: #080808;
+    font-family: Karla;
+    font-size: 26px;
+    letter-spacing: 1.25px;
+    line-height: 56px;
+    margin: 0px 30px 0 46px;
+    font-weight:500;
+    padding-left: 24px;
+    background-color: #c2c0c0;
+    border-radius: 20px;
+ }
+
+ section.area-cadastro .container .menu-cadastro h2 {
+    font-family: Karla;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    line-height: 56px;
+    margin: 30px 30px 0 22px;
+    padding: 0 0 0 5px;
+    font-weight:500;
+    max-width: 100%;
+ }
+
+ section.area-cadastro .container .menu-cadastro .nome-remedio {
+    background-color: #ffffff;
+    font-family: Karla;
+    font-size: 20px;
+    letter-spacing: 1.20px;
+    line-height: 56px;
+    margin: 0px 30px 0 22px;
+    font-weight:500;
+    border-radius: 5px;
+    padding: 0 0 0 5px;
+    max-width: 100%;
+    height: 48px;
+    cursor: pointer;
+ } 
+ 
+ section.area-cadastro .container .menu-cadastro h3 {
+    font-family: Karla;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    line-height: 56px;
+    margin: 0px 30px 0 22px;
+    padding: 0 0 0 5px;
+    font-weight:500;
+    max-width: 100%;
+ }
+
+ section.area-cadastro .container .menu-cadastro .dosagem {
+    background-color: #ffffff;
+    font-family: Karla;
+    font-size: 20px;
+    letter-spacing: 1.20px;
+    line-height: 56px;
+    margin: 0px 30px 0 22px;
+    font-weight:500;
+    border-radius: 5px;
+    padding: 0 0 0 5px;
+    max-width: 100%;
+    height: 48px;
+    cursor: pointer;
+ }
+
+  
+ section.area-cadastro .container .menu-cadastro h4 {
+    font-family: Karla;
+    font-size: 20px;
+    letter-spacing: 1.25px;
+    line-height: 56px;
+    margin: 0px 30px 0 22px;
+    padding: 0 0 0 5px;
+    font-weight:500;
+    max-width: 100%;
+ }
+
+ section.area-cadastro .container .menu-cadastro .horario{
+    background-color: #ffffff;
+    font-family: Karla;
+    font-size: 20px;
+    letter-spacing: 1.20px;
+    line-height: 56px;
+    margin: 0px 30px 0 22px;
+    font-weight:500;
+    border-radius: 5px;
+    padding: 0 0 0 5px;
+    max-width: 100%;
+    height: 48px;
+    cursor: pointer;
+ }
+
+ button {
+    margin: 30px 0 0 22px;
+    background-color: #0A9396;
+    max-width: 955px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 1px solid #224444;
+    height: 50%;
+ }
+
+ section.list-meds .container table {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+    border-collapse: collapse; /* Remove os espaços entre as células */
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+    text-align: center;
+ }
+
+ section.list-meds .container table td {
+    padding: 22px;
+    border: 1px solid rgb(130, 128, 128)
+ }
+
+ section.list-meds .container table .tr-1 {
+    margin: 10px 0 0 0;
+    padding: 22px;
+    background-color: #0A9396;
+ }
+
+ 
+ section.list-meds .container table .tr-2 {
+    margin: 10px 0 0 0;
+    padding: 22px;
+    background-color: #adb5bd;
+ }
+
+ section.list-meds .container table .tr-3 {
+    margin: 10px 0 0 0;
+    padding: 22px;
+    background-color: #dcdcdd;
+ }
+
+ section.list-meds .container table .tr-4 {
+    margin: 10px 0 0 0;
+    padding: 22px;
+    background-color: #adb5bd;
+ }
+
+ section.list-meds .container table .tr-5 {
+    margin: 10px 0 0 0;
+    padding: 22px;
+    background-color: #dcdcdd;
+ }
+
+ section.list-meds .container table .tr-6 {
+    margin: 10px 0 0 0;
+    padding: 22px;
+    background-color: #adb5bd;
+ }
